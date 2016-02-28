@@ -1,6 +1,6 @@
 body {
-    background-color: #90C7E3;
-    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-color: #4F6D93;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
     background-repeat: no-repeat;
     color: #666666;
     font-family: sans-serif;
@@ -9,7 +9,7 @@ body {
 #wrapper {
     margin: auto;
     width: 80%;
-    background-color: #FFFFFF;
+    background-color: #90C7E3;
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px 3px 3px #333333;
@@ -19,7 +19,7 @@ h1 {
     background-color: #000033;
     color: #FFFFFF;
     margin-bottom: 0;
-    background-image: url(sunset.jpg);
+    background-image: url(images/sunset.jpg);
     background-position: right;
     background-repeat: no-repeat;
     height: 60px;
@@ -29,17 +29,42 @@ h1 {
 }
 
 nav {
-    background-color: #FFFFFF;
     font-weight: bold;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
+    float: left;
+    width: 160px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 1.2em;
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+div {
+    margin-left: auto;
 }
 
 main {
+    background-color: #FFFFFF;
+    margin-left: 190px;
     padding-top: 1px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     display: block;
 }
 
@@ -67,6 +92,8 @@ dt {
 }
 
 footer {
+    background-color: #FFFFFF;
+    margin-left: 190px;
     font-size: 75%;
     font-style: italic;
     text-align: center;
@@ -77,24 +104,30 @@ footer {
     font-size: 90%
 }
 
-ul {
-    list-style-image: url(marker.gif)
+main ul {
+    list-style-image: url(images/marker.gif)
 }
 
-homehero {
+#homehero {
+    background-image: url(images/coasthero.jpg);
     height: 300px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-left: 190px;
 }
 
-yurthero {
+#yurthero {
+    background-image: url(images/yurthero.jpg);
     height: 300px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-left: 190px;
 }
 
-trailhero {
+#trailhero {
+    background-image: url(images/trailhero.jpg);
     height: 300px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-left: 190px;
 }
