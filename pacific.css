@@ -70,6 +70,7 @@ main {
 
 nav a {
     text-decoration: none;
+    transition: color 3s ease-out;
 }
 
 h2 {
@@ -81,10 +82,6 @@ h2 {
 h3 {
     color: #000033;
     font-family: serif;
-}
-
-dt {
-    color: #000033;
 }
 
 .resort {
@@ -99,6 +96,7 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 20px;
+    float: none;
 }
 
 .contact {
@@ -107,7 +105,6 @@ footer {
 
 main ul {
     list-style-image: url(images/marker.gif);
-    list-st
 }
 
 #homehero {
@@ -176,6 +173,88 @@ td {
 
 tr:nth-of-type(odd) {
     background-color: #F5FAFC;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 20px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-left: 130px;
+}
+
+video,
+embed {
+    float: right;
+    padding-left: 20px;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align: left;
+    color: #000000;
+}
+
+#gallery body {
+    background-color: #FFFFFF;
+}
+
+#gallery ul {
+    width: 300px;
+    list-style: none;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border: none;
+}
+
+#gallery a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 64em) {
@@ -250,6 +329,20 @@ tr:nth-of-type(odd) {
         display: inline;
     }
     #desktop {
+        display: none;
+    }
+    label {
+        float: none;
+        text-align: left;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+    }
+    textarea {
+        display: block;
+        margin-bottom: 20px;
+    }
+    #gallery {
         display: none;
     }
 }
